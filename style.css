@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.container{
+    height: 100vh;
+}
+
+.container header{
+    width: 99%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    margin: 10px auto;
+    background-color: #dff9fb;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container header .logo{
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container header .search-container{
+    font-size: 23px;
+}
+
+.container header .search-container .input-container input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    width: 200px;
+    background-color: #dff9fb;
+}
+
+/* header Section completed */
+
+.container .main-buttons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px auto;
+}
+
+.container .main-buttons .add,
+.container .main-buttons .short{
+    background-color: #dff9fb;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container .main-buttons .add:hover{
+    color: white;
+    background-color: black;
+    transition: 0.6s ease;
+}
+
+
+.container .main-buttons .short select{
+    padding: 2px;
+    font-weight: 600;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+/* Data Section */
+
+.container .main-data .user-detail{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 22px;
+    background-color: #ecf0f1;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.container .main-data .user-detail .serial-number{
+    width: 10%;
+}
+
+.container .main-data .user-detail .user-name{
+    width: 55%;
+}
+
+.container .main-data .user-detail .user-age{
+    width: 10%;
+}
+
+.container .main-data .user-detail .user-gender{
+    width: 15%;
+}
+
+/* pop up section */
+
+.container .pop-up{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(228, 33%, 97%);
+    visibility: hidden;
+    border: 3px solid black;
+}
+
+.container .pop-up input,
+.container .pop-up .gender{
+    display: block;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+.container .pop-up .gender select{
+    padding: 1px;
+    font-size: 18px;
+}
+
+.container .pop-up .gender select option{
+    font-size: 18px;
+}
+
+.container .pop-up h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 8px;
+    font-size: 40px;
+}
+
+.container .pop-up h3{
+    font-weight: 500;
+    margin: 8px;
+    color: red;
+    font-size: 14px;
+}
+
+.container .pop-up button{
+    font-size: 23px;
+    padding: 7px 20px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border: 4px solid black;
+}
+
+.container .pop-up button:hover{
+    color: black;
+    background-color: #dff9fb;
+    border: 2px solid black;
+}
